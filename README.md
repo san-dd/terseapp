@@ -10,7 +10,7 @@ demo app for test
 ##### password=admin
 
 
-### api integrationed
+### api integrated
 
 ##### create wallet
 ##### delete wallet
