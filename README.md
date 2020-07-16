@@ -1,8 +1,13 @@
 # terseapp
 demo app for test
 
-username=admin
-password=admin
+### to run app
+#### npm install
+#### node app
+
+## user credentials
+##### username=admin
+##### password=admin
 
 
 ### api integrationed
