@@ -7,8 +7,7 @@ password=admin
 
 ### api integrationed
 
-create wallet
-delete wallet
-list all wallet
-
-verify wallet
+##### create wallet
+##### delete wallet
+##### list all wallet
+##### verify wallet
