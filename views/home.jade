@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    h2.form-signin-heading welcome  #{username}
+    h3
+    h3 Wallet list
+    h3
+    - var values = walletlist?walletlist:[]
+    ul
+        each val in values
+            li= "walletId:"+val["walletId"]+"\n"+" name:"+val["name"]
+
+    form.form-signin(action="/deletewallet", method="post")
+        input.input-block-level(type="walletid", name="walletid", placeholder="walletid")
+        button.btn.btn-large.btn-primary(type="submit") Delete wallet
+        h2
+    p3 #{msg}
+    h2
+    h2
+    form.form-signin(action="/createwallet", method="post")
+        input.input-block-level(type="ownerName", name="ownerName", placeholder="ownerName")
+        button.btn.btn-large.btn-primary(type="submit") create wallet
+        h2
+    p3 #{msg1}
+    h2
+    h2
+    form.form-signin(action="/verify", method="post")
+        input.input-block-level(type="walletid", name="walletid", placeholder="walletid")
+        button.btn.btn-large.btn-primary(type="submit") verify wallet
