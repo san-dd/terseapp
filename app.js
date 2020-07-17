@@ -21,19 +21,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //login api
 app.use('/', indexRouter);
+//wallet handler api
 app.use('/', walletroute);
-// router.get('/', function(req, res, next) {
-//     res.render('index');
-// });
 
-// router.get('/', function(req, res, next) {
-//     if (req.body.username == "admin" && req.body.password == "Admin") {
-//         res.render('home', { username: req.body.username });
-//     } else {
-//         res.redirect('/', { msg: 'Invalid credentials' });
-//     }
-// });
-// catch 404 and forward to error handler
 app.use(function(req, res, next) {
     next(createError(404));
 });
