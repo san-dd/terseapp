@@ -15,8 +15,3 @@ class Verification {
 }
 
 module.exports = new Verification
-var abc = new Verification
-
-abc.Verification_wallet({ "walletId": "Ce8WVuwZSplOv5XPIFvD3ZVh2hzjip46E" }, (res) => {
-    console.log("asd", res)
-})
