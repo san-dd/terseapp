@@ -1,14 +1,18 @@
 # terseapp
 demo app for test
 
-username=admin
-password=admin
+### to run app
+#### npm install
+#### node app
+
+## user credentials
+##### username=admin
+##### password=admin
 
 
-###api integrationed
+### api integrated
 
-create wallet
-delete wallet
-list all wallet
-
-verify wallet
+##### create wallet
+##### delete wallet
+##### list all wallet
+##### verify wallet
