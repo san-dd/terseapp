@@ -4,7 +4,7 @@ class Verification {
     Verification_wallet(data, callback) {
         unirest
             .get(`https://api.streetcred.id/wallet/v1/api/${data.walletId}/verifications`)
-            .headers({ 'accept': 'text/plain', 'Content-Type': 'application/json', 'Authorization': 'bearer IQiLu-NkPFMqhxpjZ7BoWM_JT8cWQHJYH9CO6EC8hoM', 'X-Streetcred-Subscription-Key': 'cf8273b352b04711b4ad5575ae551e77' })
+            .headers({ 'accept': 'text/plain', 'Content-Type': 'application/json', 'Authorization': 'bearer IQiLu-***********', 'X-Streetcred-Subscription-Key': '***********' })
             .send()
             .then((response) => {
                 console.log(response.body)
